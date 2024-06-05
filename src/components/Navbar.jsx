@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav className="flex justify-between h-16 items-center px-10 shadow-md ">
       <div className="text-3xl font-poppin font-semibold "> Hospital</div>
-      <ul className="flex gap-8 text-lg items-center font-poppin font-medium">
+      <ul className="flex gap-8 text-lg items-center font-poppin  transition-all">
         <li className=" hover:text-blue-700 ">
           <NavLink to="/">Home</NavLink>
         </li>
