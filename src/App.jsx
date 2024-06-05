@@ -8,19 +8,16 @@ import Testimonals from "./pages/Testimonals";
 BrowserRouter;
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<HomePage />} />
-    //     <Route path="service" element={<Service />} />
-    //     <Route path="contact-us" element={<ContactUs />} />
-    //     <Route path="about-us" element={<AboutUs />} />
-    //     <Route path="testimonals" element={<Testimonals />} />
-    //   </Routes>
-    // </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="service" element={<Service />} />
+        <Route path="contact-us" element={<ContactUs />} />
+        <Route path="about-us" element={<AboutUs />} />
+        <Route path="testimonals" element={<Testimonals />} />
+      </Routes>
+    </BrowserRouter>
 
-    <div className="bg">
-      this is the cat
-    </div>
   );
 }
 export default App;
