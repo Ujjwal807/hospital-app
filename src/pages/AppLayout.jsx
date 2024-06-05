@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 
 function AppLayout() {
     return (
-        <div>
+        <div className="font-poppin">
             <Navbar/>
             <Outlet/>
             <Footer/>
