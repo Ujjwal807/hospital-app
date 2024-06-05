@@ -2,9 +2,9 @@ import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav>
-      <div> Hospital</div>
-      <ul>
+    <nav className="flex justify-between">
+      <div className="text-3xl font-poppin font-semibold "> Hospital</div>
+      <ul className="flex">
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
