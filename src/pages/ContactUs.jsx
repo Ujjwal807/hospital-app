@@ -1,7 +1,7 @@
 function ContactUS() {
     return (
         <div>
-            
+            Contact us page
         </div>
     )
 }

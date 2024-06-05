@@ -1,9 +1,5 @@
 function AboutUs() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return <div>About us page</div>;
 }
 
-export default AboutUs
+export default AboutUs;

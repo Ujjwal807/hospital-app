@@ -1,7 +1,7 @@
 function Testimonals() {
     return (
         <div>
-            
+            Our testimonals
         </div>
     )
 }
