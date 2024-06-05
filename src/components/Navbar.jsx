@@ -1,12 +1,27 @@
+import { Link, NavLink } from "react-router-dom";
+
 function Navbar() {
   return (
-    <nav className="">
-      <ul className="flex ">
-        <li className="text-red-500">Home</li>
-        <li className="text-red-500">About Us</li>
-        <li className="text-red-500">Testimonals</li>
-        <li className="text-red-500">Contact Us</li>
+    <nav>
+      <div> Hospital</div>
+      <ul>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about-us">About</NavLink>
+        </li>
+        <li>
+          <NavLink to="/services">Services</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact-us">Contact</NavLink>
+        </li>
+        <li>
+          <NavLink to="/testimonals">Testimonals</NavLink>
+        </li>
       </ul>
+      <Link>Book an appointment</Link>
     </nav>
   );
 }
