@@ -16,19 +16,19 @@ function MobileNav() {
                 onClick={() => setIsChecked(false)}
                 className="lg:hidden md:hidden"
               />
-              <li className=" ">
+              <li>
                 <NavLink to="/">Home</NavLink>
               </li>
-              <li className=" ">
+              <li>
                 <NavLink to="/about-us">About</NavLink>
               </li>
-              <li className=" ">
+              <li>
                 <NavLink to="/services">Services</NavLink>
               </li>
-              <li className=" ">
+              <li>
                 <NavLink to="/contact-us">Contact</NavLink>
               </li>
-              <li className=" ">
+              <li>
                 <NavLink to="/testimonals">Testimonals</NavLink>
               </li>
             </ul>

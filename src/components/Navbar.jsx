@@ -1,8 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
-// import { RxHamburgerMenu } from "react-icons/rx";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
-import MobileNav from "./MobileNav";
+// import MobileNav from "./MobileNav";
 
 function Navbar() {
   const [ischecked, setIsChecked] = useState(true);
@@ -40,10 +40,10 @@ function Navbar() {
           </div>
         </div>
       ) : (
-        // <div className="p-5" onClick={() => setIsChecked(true)}>
-        //   <RxHamburgerMenu size={30} />
-        // </div>
-        <MobileNav/>
+        <div className="p-5" onClick={() => setIsChecked(true)}>
+          <RxHamburgerMenu size={30} />
+        </div>
+        // <MobileNav/>
       )}
     </nav>
   );
