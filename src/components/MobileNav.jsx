@@ -1,50 +1,41 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { NavLink } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
 
-function MobileNav() {
-    const [ischecked, setIsChecked] = useState(true);
-    return (
-        <nav className="flex justify-between ">
-        <div className="text-2xl py-5 px-4 ">Hospital</div>
-        {ischecked ? (
-          <div className="py-5 flex flex-col p-5 h-screen absolute bg-gray-700 text-white right-0 transition-all shadow-lg">
-            <ul className="flex flex-col items-start gap-6 py-2 px-3  ">
-              <RxCross2
-                size={25}
-                onClick={() => setIsChecked(false)}
-                className="lg:hidden md:hidden"
-              />
-              <li className=" ">
-                <NavLink to="/">Home</NavLink>
-              </li>
-              <li className=" ">
-                <NavLink to="/about-us">About</NavLink>
-              </li>
-              <li className=" ">
-                <NavLink to="/services">Services</NavLink>
-              </li>
-              <li className=" ">
-                <NavLink to="/contact-us">Contact</NavLink>
-              </li>
-              <li className=" ">
-                <NavLink to="/testimonals">Testimonals</NavLink>
-              </li>
-            </ul>
-            <div className="py-6">
-              <Link className=" bg-indigo-600 py-3 px-4 rounded-full  text-white hover:bg-indigo-700 hover:transition ease-in-out delay-150  ">
-                Book appointment
-              </Link>
-            </div>
-          </div>
-        ) : (
-          <div className="p-5  " onClick={() => setIsChecked(true)}>
-            <RxHamburgerMenu size={30} />
-          </div>
-        )}
-      </nav>
-    )
+// eslint-disable-next-line react/prop-types
+function MobileNav({ setIsChecked }) {
+  return (
+    <nav>
+      <div className="py-5 flex flex-col gap-6 p-5 h-screen absolute top-0 bg-gray-700 text-white right-0 transition-all shadow-lg">
+        <div>
+          <RxCross2
+            size={25}
+            onClick={() => setIsChecked(false)}
+            className="text-2xl cursor-pointer"
+          />
+        </div>
+        <ul className="flex flex-col items-start gap-6 py-2 px-3">
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about-us">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/services">Services</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact-us">Contact</NavLink>
+          </li>
+          <li>
+            <NavLink to="/testimonals">Testimonials</NavLink>
+          </li>
+        </ul>
+        <button className="bg-indigo-600 py-3 px-4 rounded-full text-white hover:bg-indigo-700 hover:transition ease-in-out delay-150">
+          Book appointment
+        </button>
+      </div>
+    </nav>
+  );
 }
 
-export default MobileNav
+export default MobileNav;
